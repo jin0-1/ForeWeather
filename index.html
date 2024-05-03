@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>ForeWeather</title>
+  <link rel="icon" type="image/x-icon" href="Weather-favicon.jpeg">
+</head>
+<body style="background-image: url('tropical-beach-at-night-with-palm-trees-and-reflection-in-water-bio-luminescence-night-beach-scene-in-maldives-with-bio-luminescent-plankton-illuminating-the-waterline-ai-generated-free-photo.jpeg');">
+  <div id="welcome">
+    <h2 id="wel_h2">Welcome to &nbsp;</h2><h1 id="wel_h1"></h1>
+  </div>
+  <div>
+    <h2 id="byline">&nbsp; Stay prepared, always...</h2>
+  </div>
+  <div class="topnav">
+    <div class="ntab active"><a href="#home">Home</a></div>
+    <div class="ntab" id="search"><a href="">Search</a></div>
+    <div class="ntab"><a href="#contact">Map</a></div>
+    <div class="ntab"><a href="#about">About</a></div>
+  </div>
+  <div class="Home">
+    <a class="weatherwidget-io" href="https://forecast7.com/en/20d5978d96/india/" data-label_1="INDIA" data-label_2="WEATHER" data-theme="original" >INDIA WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+    <main>
+      <section>
+        <h2>Multiple Cities</h2>
+        <p>Simply select your city, and we'll provide you with weather data like temperature, rain, etc..</p>
+      </section>
+      <section>
+        <h2>14 days Weather Forecast</h2>
+        <p>Plan your day in advance with confidence using our forecasts.</p>
+      </section>
+      <section>
+        <h2>Interactive Map:</h2>
+        <p>Explore our interactive weather map to track weather across India.</p>
+      </section>  
+    </main><br>
+    User Location:
+    <p id="geo-output">
+
+    </p>
+  </div> 
+  <div class="Map hidden">
+    <h2>Interactive Weather Map</h2><br>
+    <iframe title="map" id="map" src="https://mapa.tutiempo.net/en/#21.04349;77.58545;5" scrolling="no" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="true"></iframe>
+  </div> 
+  <div class="About hidden">
+    <div id="J1">Website Developed by:</div>
+    <div id="J2"><strong>Jinendra</strong></div>
+  </div> 
+  <div class="Search hidden" id="form">
+    <form action="submit_data.php" method="post" target="_blank">
+    <div class="select">
+    <select title="select city" id="in1" name="cities">
+      <option value="default" selected disabled><strong>Enter a city</strong></option>
+      <option value="Agartala">Agartala</option>
+      <option value="Ahmedabad">Ahmedabad</option>
+      <option value="Amravati">Amravati</option>
+      <option value="Bhopal">Bhopal</option>
+      <option value="Bengaluru">Bengaluru</option>
+      <option value="Chennai">Chennai</option>
+      <option value="Delhi">Delhi</option>
+      <option value="Gangtok">Gangtok</option>
+      <option value="Guwahati">Guwahati</option>
+      <option value="Hyderabad">Hyderabad</option>
+      <option value="Jaipur">Jaipur</option>
+      <option value="Kolkata">Kolkata</option>
+      <option value="Mumbai">Mumbai</option>
+      <option value="Noida">Noida</option>
+      <option value="Panaji">Panaji</option>
+      <option value="Puducherry">Puducherry</option>
+      <option value="Pune">Pune</option>
+      <option value="Srinagar">Srinagar</option>
+      <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+      <option value="Visakhapatnam">Vishakhapatnam</option>
+    </select>
+    <button title="Validate" type="button" id="validate" onclick="validateForm(event)" id="searchButton">
+      Validate form
+    </button>
+    <button title="search-icon"  class="hidden" type="submit" id="searchButton">
+      <image title="search-icon" class="search-icon" src="search-icon.png" width="24" height="24" viewBox="0 0 24 24">
+    </button>
+    </div>
+    <br><strong>Select data:</strong><br>
+    <input type="checkbox" id="max_temp" name="max_temp" value="max_temp">
+    <label for="max_temp"> Maximum Temperature (2m)</label><br>
+    <input type="checkbox" id="min_temp" name="min_temp" value="min_temp">
+    <label for="min_temp"> Minimum Temperature (2m)</label><br>
+    <input type="checkbox" id="code" name="code" value="code">
+    <label for="code"> Weather Code</label><br>
+    <input type="checkbox" id="rain" name="rain" value="rain">
+    <label for="rain"> Rain Sum</label><br>
+    <input type="checkbox" id="precip" name="precip" value="precip">
+    <label for="precip"> Precipitation Sum</label><br>
+    <input type="checkbox" id="wind" name="wind" value="wind">
+    <label for="wind"> Maximum Wind Speed (10m)</label><br>
+    <input type="checkbox" id="UV" name="UV" value="UV">
+    <label for="UV"> UV Index</label><br>
+    <input type="checkbox" id="sun" name="sun" value="sun">
+    <label for="sun"> Sunshine Duration</label><br>
+  </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

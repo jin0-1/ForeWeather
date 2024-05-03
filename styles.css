@@ -1,0 +1,177 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    color: white;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: cover;
+}
+*{
+  flex-shrink:0;
+}
+#map{
+  border:1px solid black; padding:0; margin:0; width:600px; height:500px; overflow:hidden;
+}
+div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Home, .Map, .About{
+  display: block;
+  text-align: center; 
+}
+.Home h2, .Home p, .Map h2{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+#J2{
+  font-size: 170px;
+  font-family: cursive;
+  color: transparent;
+  background-image:repeating-linear-gradient(to right, orange, yellow 10%, orange 20%);
+  background-clip: text;
+}
+#J1{
+  font-size: 70px;
+  font-family: cursive;
+  color: white;
+  background-color:rgba(0, 0, 0, 0.4)
+  background-clip: text;
+}
+#searchButton{
+  color: transparent;
+  background-color: rgba(0, 0, 0, 0);
+}
+.Map iframe {
+  width: 1100px !important;
+  height: 400px !important;
+  max-width: 1400px !important;
+  max-height: 1400px !important;
+}
+#wel_h1{
+  font-size: 45px;
+  font-weight: 600;
+  font-family: Verdana,;
+  color: transparent;
+  background-image:repeating-linear-gradient(to right, #ffffff, yellow 10%, #ffffff 20%);
+  background-clip: text;
+}
+#welcome{
+  font-weight:bold;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;  
+
+  color: white;
+  background-color: rgba(5, 6, 34, 0.4);
+}
+#byline{
+  font-weight:bold;
+  font-family:Verdana, Geneva, Tahoma, sans-serif; 
+  color: white;
+  background-color: rgba(5, 6, 34, 0.4);
+}
+.hidden{
+  display:none;
+}
+.topnav {
+  background-color: rgba(25, 31, 220, 0.58);
+  overflow: hidden;
+  margin:auto;
+  width:100%;
+
+}
+label {
+  color: white;
+  background-color: rgba(4, 4, 86, 0.505)
+}
+input[type="checkbox"]:checked+label{
+  color: rgb(36, 173, 36);
+  background-color: rgba(0, 0, 0, 0.91);
+  font-weight: bold;
+}
+form label{
+  margin-top: 1px;
+  margin-bottom: 1px;
+  display: inline-block;
+}
+.tab.active{
+  background-color: #3d9bf3;
+  color: black;
+  font-weight: bold;
+}
+select{
+  color: rgb(36, 173, 36);
+  background-color: rgba(26, 10, 10, 0.514);
+  font-weight: bold;
+  font-size: large;
+}
+select option{
+  color: red;
+  background-color: rgba(26, 10, 10, 0.514);
+}
+option[disabled]{
+  color: yellow;
+  background-color: rgba(26, 10, 10, 0.514);
+}
+/* Style the links inside the navigation bar */
+.topnav div {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  width:22.5%;
+}
+
+/* Change the color of links on hover */
+option:hover, .topnav >div:hover {
+  background-color: #3d9bf3;
+  color: black;
+}
+option, label{
+  font-size:medium;
+}
+form{
+  background-color: rgba(0, 0, 0, 0.31);
+  margin-top:5%;
+  border: solid 5px lightskyblue;
+  width:500px;
+  padding: 15px;
+}
+#select{
+  display: flex;
+  flex-wrap: wrap;
+}
+#in1{
+  width:270px;
+  height:55px;
+  background-color: black;
+}
+/* Add a color to the active/current link */
+option.active, .topnav > div.active {
+  background-color: #3d9bf3;
+  color: white;
+}
+  #section {
+    display: none;
+    height: 80vh;
+  }
+  a, a:link, a:visited {
+    font-weight: bold;
+    font-size:large;
+    color: #FFFAFA;
+    text-decoration: none; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  #typewriter {
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid;
+    animation: typing 1s steps(40) infinite;
+  }
+  #home {
+    cursor: pointer;
+  }
+  
